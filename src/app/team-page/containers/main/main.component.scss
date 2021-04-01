@@ -1,0 +1,194 @@
+.team-grid {
+  height: auto;
+  margin-left: -40px;
+  margin-bottom: 100px;
+
+  .team-member-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 95px;
+    row-gap: 40px;
+
+    @media only screen and (max-width: 989px) {
+      column-gap: 50px;
+      row-gap: 20px;
+    }
+    @media only screen and (max-width: 650px) {
+      column-gap: 0;
+      row-gap: 0;
+    }
+
+    .member {
+      list-style-type: none;
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-delay: .5s;
+      animation-fill-mode: both;
+
+      &-wrapper {
+        display: grid;
+
+        .member-card {
+          min-height: 400px;
+          max-height: 560px;
+          width: 100%;
+          max-width: 400px;
+          position: relative;
+
+          .member-image {
+            img {
+              width: 250px;
+              height: auto;
+              max-height: 100%;
+
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+
+            @media only screen and (max-width: 989px) {
+              img {
+                width: 200px;
+                height: 300px;
+              }
+            }
+
+            @media only screen and (max-width: 650px) {
+              img {
+                width: 140px;
+                height: 260px;
+              }
+            }
+          }
+
+          .member-name {
+            font: 600 18px "Poppins", sans-serif;
+            margin-top: 0;
+            width: 180px;
+          }
+
+          @media only screen and (max-width: 989px) {
+            .member-name {
+              font: 600 14px "Poppins", sans-serif;
+              margin-top: 0;
+              width: 160px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            .member-name {
+              font: 600 14px "Poppins", sans-serif;
+              margin-top: 0;
+              width: 140px;
+            }
+          }
+
+          .member-role {
+            position: absolute;
+            transform-origin: 0;
+            transform: rotateZ(90deg);
+            margin-top: -415px;
+            margin-left: 265px;
+            width: 120px;
+
+            span {
+              font: 400 12px "PT Serif", sans-serif;
+              text-transform: uppercase;
+            }
+
+            @media only screen and (max-width: 989px) {
+              span {
+                font: 400 11px "PT Serif", sans-serif;
+              }
+            }
+            @media only screen and (max-width: 650px) {
+              span {
+                font: 400 10px "PT Serif", sans-serif;
+              }
+            }
+          }
+
+          @media only screen and (max-width: 989px) {
+            .member-role {
+              margin-top: -345px;
+              margin-left: 215px;
+            }
+          }
+          @media only screen and (max-width: 650px) {
+            .member-role {
+              margin-top: -305px;
+              margin-left: 155px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: .2s;
+        margin-top: 55px;
+      }
+      &:nth-child(3) {
+        animation-delay: .4s;
+      }
+      &:nth-child(4) {
+        animation-delay: .6s;
+      }
+      &:nth-child(5) {
+        animation-delay: .8s;
+        margin-top: 55px;
+      }
+      &:nth-child(6) {
+        animation-delay: 1s;
+      }
+    }
+
+    .member:nth-of-type(2),
+    .member:nth-of-type(5) {
+      margin-top: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 989px) {
+    .team-member-list {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      .member:nth-of-type(even) {
+        margin-top: 25%;
+      }
+
+      .member:nth-of-type(5) {
+        margin-top: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .team-member-list {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      .member:nth-of-type(even) {
+        margin-top: 25%;
+      }
+
+      .member:nth-of-type(5) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

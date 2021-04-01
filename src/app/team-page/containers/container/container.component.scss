@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1440px;
+  margin: 110px 240px 24px 240px;
+}
+
+@media only screen and (max-width: 989px) {
+  main {
+    margin: 90px 132px 21px 130px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    margin: 71px 24px 17px 19px;
+  }
+}

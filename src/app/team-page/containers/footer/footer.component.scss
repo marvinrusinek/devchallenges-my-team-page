@@ -1,0 +1,19 @@
+footer {
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #a9a9a9;
+    margin: 0 auto;
+    width: 350px;
+
+    a {
+      color: #a9a9a9;
+      text-decoration: none;
+
+      &:hover {
+        color: turquoise;
+      }
+    }
+  }
+}

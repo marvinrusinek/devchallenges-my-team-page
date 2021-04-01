@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  margin-left: 20px;
+
+  .logo, .about-us {
+    flex-basis: 50%;
+  }
+
+  .logo {
+    .team-name {
+      font: 700 36px "PT Serif", sans-serif;
+      width: 280px;
+      height: 50px;
+    }
+  }
+
+  .about-us {
+    margin-top: -15px;
+
+    h2 {
+      font: 600 18px "Poppins", sans-serif;
+      width: 120px;
+      height: 30px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font: 400 18px "Poppins", sans-serif;
+      line-height: 27px;
+      width: 440px;
+      height: 90px;
+    }
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  header {
+    display: block;
+
+    .about-us {
+      margin-top: 20px;
+
+      p {
+        font: 400 16px "Poppins", sans-serif;
+        line-height: 24px;
+        width: 330px;
+        height: 90px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    display: block;
+
+    .about-us {
+      margin-top: 20px;
+
+      p {
+        font: 14px "Poppins", sans-serif;
+        line-height: 21px;
+        width: 330px;
+        height: 90px;
+      }
+    }
+  }
+}
