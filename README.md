@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MyTeamPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # devchallenges-team-page
 >>>>>>> 1468c8c455fd1ca035a0b3da13c07c94f16210b0
+=======
+# devchallenges-my-team-page
+>>>>>>> 73acd624c9e140cce5d7a016c72dd7d605ad626e
