@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 
-import { AppComponent } from './app.component';
+import { MyteampageComponent } from './myteampage.component';
 import { ContainerComponent } from './team-page/containers/container/container.component';
 import { HeaderComponent } from './team-page/containers/header/header.component';
 import { MainComponent } from './team-page/containers/main/main.component';
@@ -26,7 +26,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
+    MyteampageComponent,
     ContainerComponent,
     HeaderComponent,
     MainComponent,
@@ -39,6 +39,6 @@ const routes: Routes = [
     MatCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MyteampageComponent]
 })
-export class AppModule { }
+export class MyteampageModule { }
